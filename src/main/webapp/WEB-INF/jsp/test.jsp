@@ -11,7 +11,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>test JSP Page</title>
+        <title>Test page</title>
+        <link rel="stylesheet" type="text/css" href="${cp}/resources/css/site.css" />
+        <script src="${cp}/resources/js/js.js"></script>
     </head>
     <body>
         <h1>test</h1>
