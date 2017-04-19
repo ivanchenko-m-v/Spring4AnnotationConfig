@@ -17,6 +17,7 @@
         <h1>test</h1>
         Spring says: <span class="blue">${msg}</span>
         <span><a href="./">home</a></span>
+        <span><a href="./login">login</a></span>
     </body>
     
 </html>

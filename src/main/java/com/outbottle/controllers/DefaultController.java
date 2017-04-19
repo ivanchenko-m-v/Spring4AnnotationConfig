@@ -29,4 +29,9 @@ public class DefaultController {
        return "test";
    }
 
+   @RequestMapping(value = "/login", method = RequestMethod.GET)
+   public String login(ModelMap map) {
+       return "login";
+   }
+  
 }
