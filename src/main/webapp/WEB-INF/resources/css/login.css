@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : mivanchenko
 */
 body {
-  background: #E8EEF0 url(../img/bg.gif);
+  background: #E8EEF0 /*url(../img/bg.gif)*/;
 }
 #loginForm {
 	width: 290px;

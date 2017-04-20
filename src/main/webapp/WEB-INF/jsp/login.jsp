@@ -32,7 +32,7 @@
 
             <div class="submit">
                     <button type="submit">Войти</button>
-                    <label id="remember"><input name="" type="checkbox" value="" /> Запомнить меня</label>
+                    <!-- <label id="remember"><input name="" type="checkbox" value="" /> Запомнить меня</label> -->
             </div>
 
     </form>
