@@ -1,16 +1,82 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<form id="userDataForm" action="" method="post">
-    <div>
-        <label for="user_ar">
-            Пользователь ВБР:
-            <div><input id="user_ar" type="text" /></div>
-        </label>
+<form class="frm_user_data">
+    <!-- -->
+    <div class="cn_field">
+        <input id="id_search" type="text" placeholder="Найти..." /><br />
+        <select id="id_list" size="8">
+        </select><br />
     </div>
-    <div>
-        <label for="case_number">
-            Номер дела:
-            <div><input id="case_number" type="text" /></div>
-        </label>
+    <table class="tbl_user_data">
+        <tr>
+            <td class="title">&nbsp;</td>
+            <td class="btn"><input id="id_btn_select" type="button" value="Выбрать" /></td>
+        </tr>
+    </table>
+    <!-- -->
+    <div class="cn_field">
+        <br />
+        <input id="id_legal_entity" type="checkbox" checked /> Юридическое лицо
+        <br />
     </div>
+    <!-- -->
+   <table class="tbl_user_data">
+        <!-- -->
+         <tr class="cn_field">
+            <td class="title">Название:</td>
+            <td><input class="field" id="id_title" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">Номер дела:</td>
+            <td><input class="field" id="id_case_number" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">ИНН:</td>
+            <td><input class="field" id="id_inn" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">КПП:</td>
+            <td><input class="field" id="id_kpp" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">ОГРН:</td>
+            <td><input class="field" id="id_ogrn" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">Адрес:</td>
+            <td><input class="field" id="id_address" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">Телефон:</td>
+            <td><input class="field" id="id_phone" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">E-mail:</td>
+            <td><input class="field" id="id_email" type="text" /></td>
+        </tr>
+        <!-- -->
+        <tr class="cn_field">
+            <td class="title">Руководитель:</td>
+            <td><input class="field" id="id_director" type="text" /></td>
+        </tr>
+        <!-- empty row-->
+        <!--
+        <tr>
+            <td class="title">&nbsp;</td>
+            <td class="btn">&nbsp;</td>
+        </tr>
+        -->
+        <!-- button save -->
+        <tr>
+            <td class="title">&nbsp;</td>
+            <td class="btn"><input id="id_btn_save" type="button" value="Сохранить" /></td>
+        </tr>
+    </table>
 </form>

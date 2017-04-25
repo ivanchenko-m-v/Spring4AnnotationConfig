@@ -16,16 +16,22 @@
         <title>Quotas-2018 user order</title>
     </head>
     <body>
-        <table>
-            <tr>
-                <td class="leftpan">
-                   <jsp:directive.include file="/WEB-INF/jspf/user_order_list.jspf" /> 
-                   &nbsp;
-                </td>
-                <td class="rightpan">
-                   <jsp:directive.include file="/WEB-INF/jspf/user_data.jspf" /> 
-                </td>
-            </tr>
-        </table>
+        <div class="centralwidget">
+            <div id="pn_header">
+                header
+            </div>
+            <div id="pn_order">
+               <jsp:directive.include file="/WEB-INF/jspf/user_order_data.jspf" /> 
+            </div>
+            <div id="pn_order_list">
+               <jsp:directive.include file="/WEB-INF/jspf/user_order_list.jspf" /> 
+            </div>
+            <div id="pn_user_ar">
+               <jsp:directive.include file="/WEB-INF/jspf/user_data.jspf" /> 
+            </div>
+            <div id="pn_footer">
+                footer
+            </div>
+        </div>
     </body>
 </html>
