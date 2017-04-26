@@ -1,0 +1,15 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<address class="vcard">
+  © <a class="fn n org url work" href="http://www.cfmc.ru/">ФГБУ «Центр системы мониторинга рыболовства и связи»</a>, 2017
+  <span class="adr work">
+    <span class="street-address">Рождественский бульвар, д. 12/8, строение 1</span> ·
+    <span class="locality">Москва</span>,
+    <span class="postal-code">107996</span>
+    <span class="country-name">Российская Федерация</span>
+  </span>
+  <span class="tel">
+   <span class="type">Work</span> <span title="+74957971864" class="value"> +7 (495) 797-18-64</span>
+  </span> ·
+  <a class="email" href="mailto:info@cfmc.ru">info@cfmc.ru</a>
+</address>

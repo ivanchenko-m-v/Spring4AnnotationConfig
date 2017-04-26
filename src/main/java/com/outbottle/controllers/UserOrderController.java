@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class UserOrderController {
     
     @RequestMapping(value = "/user_order", method = RequestMethod.GET)
-    public String test(ModelMap map) {
+    public String user_order(ModelMap map) {
         return "user_order";
     }
     

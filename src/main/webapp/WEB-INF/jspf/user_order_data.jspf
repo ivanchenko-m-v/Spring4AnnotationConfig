@@ -1,5 +1,47 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<form>
-    user order data
-</form>
+  <form>
+    <table>
+      <!-- -->
+      <tr>
+        <td>
+          <label for="id_basin">Бассейн промысла:</label><br />
+          <select class="o_field" id="id_basin"></select>
+        </td>
+         <td>
+          <label for="id_qtype">Вид квоты:</label><br />
+          <select class="o_field" id="id_qtype"></select>
+        </td>
+         <td>
+          <label for="id_ar">ВБР:</label><br />
+          <select class="o_field" id="id_ar"></select>
+        </td>
+     </tr>
+      <!-- -->
+      <tr>
+        <td>
+          <label for="id_region">Район промысла:</label><br />
+          <select class="o_field" id="id_region"></select>
+        </td>
+         <td>
+          <label for="id_subject">Субъект РФ:</label><br />
+          <select class="o_field" id="id_subject"></select>
+        </td>
+         <td>
+          <label for="id_user_ar">Пользователь ВБР:</label><br />
+          <input class="o_field" id="id_user_ar" />
+        </td>
+     </tr>
+      <!-- -->
+      <tr>
+        <td>
+          <label for="id_portion">Размер доли:</label><br />
+          <input class="o_field" id="id_portion" />
+        </td>
+        <td class="btn" colspan="2">
+          <input type="button" value="Сохранить" />
+          <input type="button" value="Очистить" />
+        </td>
+     </tr>
+    </table>
+  </form>

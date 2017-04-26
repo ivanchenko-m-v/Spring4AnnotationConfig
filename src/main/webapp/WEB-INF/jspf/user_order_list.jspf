@@ -1,5 +1,23 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<form>
-    <h1>user order list</h1>
-</form>
+<table class="orderlist" cellspacing="0" cellpadding="2">
+    <!-- header -->
+    <tr>
+        <th class="colbasin">Бассейн
+        <th class="colar">ВБР
+        <th class="colreg">Район
+        <th class="colsubj">Субъект РФ
+        <th class="colpor">Доля, %
+    </tr>
+    <!-- data -->
+    <tr>
+        <td class="data_qtype" colspan="5"> test
+    </tr>
+    <tr>
+        <td class="data_basin"> basin 1
+        <td class="data_ar">ВБР
+        <td class="data_reg">Район
+        <td class="data_subj">Субъект РФ
+        <td class="data_por">70.00
+    </tr>
+</table>

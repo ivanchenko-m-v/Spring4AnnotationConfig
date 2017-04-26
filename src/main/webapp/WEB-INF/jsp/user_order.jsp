@@ -18,7 +18,7 @@
     <body>
         <div class="centralwidget">
             <div id="pn_header">
-                header
+                <span>ИС &laquo;КВОТЫ-2018&raquo;</span>
             </div>
             <div id="pn_order">
                <jsp:directive.include file="/WEB-INF/jspf/user_order_data.jspf" /> 
@@ -30,7 +30,7 @@
                <jsp:directive.include file="/WEB-INF/jspf/user_data.jspf" /> 
             </div>
             <div id="pn_footer">
-                footer
+               <jsp:directive.include file="/WEB-INF/jspf/cfmc_address.jspf" /> 
             </div>
         </div>
     </body>

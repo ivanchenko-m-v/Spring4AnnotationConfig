@@ -13,7 +13,7 @@ and open the template in the editor.
     height: 97vh;
   
     grid-template-columns: [left-border] 1fr [v-split] 400px [right-border];
-    grid-template-rows: [top-border] 30px [header] 200px [h-split] 1fr [footer] 30px [bottom-border];
+    grid-template-rows: [top-border] 30px [header] 160px [h-split] 1fr [footer] 30px [bottom-border];
 }
 
 [id^="pn_"]
@@ -24,7 +24,7 @@ and open the template in the editor.
 /*.centralwidget > :nth-child(1) */
 #pn_order
 { /*order*/
-    background-color: #FFF;
+    background-color: #DDD;
   
     grid-column-start: left-border;
     grid-column-end: v-split;
@@ -36,19 +36,21 @@ and open the template in the editor.
 /*.centralwidget > :nth-child(2)*/
 #pn_order_list
 { /*list*/
-    background-color: #AAF;
+ /*   background-color: #000;*/
   
     grid-column-start: left-border;
     grid-column-end: v-split;
   
     grid-row-start: h-split;
     grid-row-end: footer;
+    
+    padding: 0;
 }
 
 /*.centralwidget > :nth-child(3) */
 #pn_user_ar
 { /*user AR*/
-    background-color: #7F7;
+    background-color: #DDD;
   
     grid-column-start: v-split;
     grid-column-end: right-border;
@@ -60,7 +62,7 @@ and open the template in the editor.
 /*.centralwidget > :nth-child(4) */
 #pn_footer
 { /*footer*/
-    background-color: #00F;
+    background-color: #55F;
   
     grid-column-start: left-border;
     grid-column-end: right-border;
@@ -68,18 +70,23 @@ and open the template in the editor.
     grid-row-start: footer;
     grid-row-end: bottom-border;
     
-    align-content: center;
+    text-align: center;
+    font-size: 0.8em;
 }
 
 #pn_header
 { /*header*/
-    background-color: #048;
+    background-color: #55F;
+    padding: 5px;
   
     grid-column-start: left-border;
     grid-column-end: right-border;
   
     grid-row-start: top-border;
     grid-row-end: header;
+    
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .title 
@@ -90,9 +97,12 @@ and open the template in the editor.
 .btn
 {
     text-align: right;
-    width: 220px;
+    vertical-align: bottom;
+/*    width: 220px;*/
 }
-
+/*
+*   user data
+*/
 .field 
 {
     width: 220px;
@@ -116,4 +126,93 @@ and open the template in the editor.
 #id_search
 {
     width: 100%;
+}
+/*
+*   order data
+*/
+.o_field 
+{
+    width: 300px;
+}
+
+/*
+*   order list
+*/
+.orderlist
+{
+/*    min-width: 1fr;*/
+    border: solid;
+    border-width: 1px;
+    width: 100%;
+    
+    font-size: 0.9em;
+}
+/*        <th class="colbasin">Бассейн*/
+.colbasin
+{
+    width: 100px;
+    border: solid;
+    border-width: 0.5px;
+}
+/*        <th class="colar">ВБР*/
+.colar
+{
+    width: 1fr;
+    border: solid;
+    border-width: 0.5px;
+}
+/*        <th class="colreg">Район*/
+.colreg
+{
+    width: 150px;
+    border: solid;
+    border-width: 0.5px;
+}
+/*        <th class="colsubj">Субъект РФ*/
+.colsubj
+{
+    width: 150px;
+    border: solid;
+    border-width: 0.5px;
+}
+/*        <th class="colpor">Доля, %*/
+.colpor
+{
+    width: 150px;
+    border: solid;
+    border-width: 0.5px;
+}
+
+[class^="data_"]
+{
+    border: solid;
+    border-width: 0.5px;
+    
+    font-size: 0.8em;
+}
+/*data quota type*/
+.data_qtype
+{
+    background-color: #D0E6F6;
+    color: darkred;
+
+    font-size: 0.9em;
+    font-weight: bold;
+    
+    text-align: center;
+}
+/*        <td class="data_basin"> basin 1*/
+
+/*        <th class="data_ar">ВБР */
+
+/*        <th class="data_reg">Район */
+
+/*        <th class="data_subj">Субъект РФ */
+
+/*        <th class="data_por">Доля, % */
+.data_por
+{
+    text-align: right;
+    color: darkolivegreen;
+    font-weight: bold;
 }
